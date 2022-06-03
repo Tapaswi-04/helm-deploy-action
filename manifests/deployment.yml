@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: tapaswihelmdeployaction 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tapaswihelmdeployaction
+  template:
+    metadata:
+      labels:
+        app: tapaswihelmdeployaction 
+    spec:
+      containers:
+        - name: tapaswihelmdeployaction 
+          image: sampledeploymentacr.azurecr.io/tapaswihelmdeployaction
+          ports:
+          - containerPort: 80
