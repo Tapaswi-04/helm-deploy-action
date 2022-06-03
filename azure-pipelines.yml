@@ -17,6 +17,7 @@ variables:
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'sampledeploymentacr3948-auth'
+  imagePullPolicy: Always
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
