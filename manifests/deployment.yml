@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: tapaswihelmdeployaction 
 spec:
+  progressDeadlineSeconds: 6000
   replicas: 1
   selector:
     matchLabels:
